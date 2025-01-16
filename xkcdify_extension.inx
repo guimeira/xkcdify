@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>xkcdify</name>
+  <id>com.github.guimeira.inkscape.xkcdify</id>
+
+  <param name="tab" type="notebook">
+    <page name="1" gui-text="Squiggles">
+      <param name="p_scale" type="float" precision="2" min="0.1" max="1000" gui-text="Scale">0.15</param>
+      <image>scale_example.png</image>
+      <label>Scale controls how tall the squiggles are going to be</label>
+      <separator/>
+      <param name="p_length" type="float" precision="2" min="0.1" max="1000" gui-text="Length">2</param>
+      <image>length_example.png</image>
+      <label>Length controls how the frequency of the squiggles</label>
+      <separator/>
+      <param name="p_randomness" type="float" precision="2" min="0.1" max="1000" gui-text="Randomness">2.0</param>
+      <image>randomness_example.png</image>
+      <label>Randomness controls how irregular the squiggles are</label>
+    </page>
+    <page name="2" gui-text="Replace fonts">
+      <label>Replace the font in all selected texts with Humor Sans</label>
+      <label>Download Humor Sans in the link below:</label>
+      <label appearance="url">https://github.com/shreyankg/xkcd-desktop/blob/master/Humor-Sans.ttf</label>
+      <param name="replace_font" type="bool" gui-text="Replace fonts with Humor Sans">true</param>
+    </page>
+    <page name="3" gui-text="Other">
+      <label appearance="header">Maximum segment length</label>
+      <label>Paths are going to be split into segments with at most this length</label>
+      <param name="max_segment_length" type="float" precision="1" min="0.1" max="1000" gui-text="Value">10.0</param>
+      <param name="max_segment_length_unit" gui-text="Unit" type="optiongroup" appearance="combo">
+            <option translatable="no" value="px">px</option>
+            <option translatable="no" value="pt">pt</option>
+            <option translatable="no" value="in">in</option>
+            <option translatable="no" value="cm">cm</option>
+            <option translatable="no" value="mm">mm</option>
+      </param>
+      <label appearance="header">Random number generator seed</label>
+      <label>Using the same seed on the same image should always give the exact same result. Pick different seeds for slightly different results.</label>
+      <param name="random_seed" type="int" precision="0" min="1" max="1000" gui-text="Value">1</param>
+    </page>
+    <page name="4" gui-text="Help">
+      <label appearance="header">Tip</label>
+      <label>This plugin only processes paths. If you need to XKCDify rectangles, ellipses, etc, convert them to paths using Path &gt; Object to Path.</label>
+
+      <label appearance="header">Issues</label>
+      <label>If you have any issues with this extension or you want to contribute to its development, visit our Github page:</label>
+      <label appearance="url">https://github.com/guimeira/xkcdify</label>
+    </page>
+  </param>
+  
+  <effect>
+    <effects-menu>
+      <submenu name="Modify Path"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">xkcdify_extension.py</command>
+  </script>
+</inkscape-extension>
