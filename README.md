@@ -17,7 +17,7 @@ Open Inkscape and go to **Edit > Preferences**. Open the **System** tab on the l
 
 Locate the **User extensions** folder and click **Open**.
 
-Extract the files from the xcdify release you just downloaded into this folder and restart Inkscape.
+Extract the files from the xkcdify release you just downloaded into this folder and restart Inkscape.
 
 Optionally, download the Humor Sans font [here](https://github.com/shreyankg/xkcd-desktop/blob/master/Humor-Sans.ttf) and install it.
 
@@ -40,3 +40,5 @@ Then, we'll add some noise to each one of the nodes we just created. The logic f
 Basically, we compute how much we'll displace each node by generating a random number and passing it through a sine function, which causes the resulting path to look squiggly. Each node is moved in a direction that is perpendicular to the current direction of the path.
 
 ![How it works](docs/how-it-works.png)
+
+This project is not affiliated, authorized or endorsed by xkcd. I'm just a guy on the internet who thinks xkcd is cool.
