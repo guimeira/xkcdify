@@ -8,7 +8,13 @@ This is a recreation of [xkcd #688](https://xkcd.com/688) in Inkscape before and
 
 ## Installation
 ### Inkscape Extension Manager
-I have submitted this extension to the Inkscape team for review, so hopefully it should be available on the Extension Manager soon
+Open Inkscape and go to **Extensions >> Manage extensions**.
+
+Open the **Install packages** tab and search for `xkcdify`.
+
+Select this extension and click **Install package**.
+
+Once the installation is complete, restart Inkscape.
 
 ### Manual installation
 Download the latest release from the [Releases page](releases).
