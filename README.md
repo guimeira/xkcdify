@@ -16,6 +16,8 @@ Select this extension and click **Install package**.
 
 Once the installation is complete, restart Inkscape.
 
+Optionally, download the Humor Sans font [here](https://github.com/shreyankg/xkcd-desktop/blob/master/Humor-Sans.ttf) and install it.
+
 ### Manual installation
 Download the latest release from the [Releases page](releases).
 
